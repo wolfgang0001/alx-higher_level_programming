@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * is_palindrome - check if a singly 
+ * is_palindrome - checking if  a singly linked list
  * is a palindrome
- * @head: pointer of the  head of list
+ * @head: pointer to head
  * Return: 0 if it is not a palindrome,
  * 1 if it is a palndrome
  */
