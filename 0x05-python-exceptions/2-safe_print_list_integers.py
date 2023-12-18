@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-import sys
-
-def safe_print_integer_err(value):
+def safe_print_list_integers(my_list=[], x=0):
+    count = 0
     try:
-        print("{:d}".format(value))
-        return True
-    except (ValueError, TypeError) as er:
-        print("Exception: {}".format(er), file=sys.stderr)
-        return False
+        for i in range(x):
+            if type(my_list[i]) is int:
+                print("{:d}".format(my_list[i]), end="")
+                count += 1
+    except ValueError and TypeError:
+        return
     else:
-        return True
+        print()
+        return count
